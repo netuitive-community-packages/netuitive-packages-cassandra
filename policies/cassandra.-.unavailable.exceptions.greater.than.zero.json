@@ -17,8 +17,8 @@
       "wildcard" : "cassandra.*Unavailables.OneMinuteRate",
       "metricScopeTags" : { },
       "analytic" : "actual",
-      "operator" : ">",
-      "level" : 0.0,
+      "operator" : ">=",
+      "level" : 1.0,
       "level2" : null,
       "metricThresholdLevel" : null,
       "metricThresholdAnalytic" : null
