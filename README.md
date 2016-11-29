@@ -1,4 +1,9 @@
-#netuitive.packages.cassandra 0.0.2 [PRELIMINARY VERSION]
+#netuitive.packages.cassandra 1.0.0
 
-_**This is a preliminary release of the package for monitoring Cassandra, for select customers. This package is still in development.**_
+For detailed information on this package, please refer to the [online documentation](https://help.netuitive.com/Content/Datasources/Netuitive/cassandra.htm).
 
+##Release History
+
+###Version 1.0.0
+
+* Initial production version.

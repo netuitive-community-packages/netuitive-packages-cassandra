@@ -1,0 +1,53 @@
+{
+  "analyticConfiguration" : {
+    "tenantId" : null,
+    "type" : "METRIC_META",
+    "id" : null,
+    "packageId" : null,
+    "name" : "Cassandra",
+    "scope" : {
+      "elementName" : null,
+      "elementType" : "SERVER",
+      "elementTags" : null,
+      "metricMatches" : "^cassandra.*"
+    },
+    "metrics" : [ {
+      "match" : "cassandra.*\\.(?!Latency).*\\.OneMinuteRate",
+      "properties" : {
+        "tags" : {
+          "unit" : "ops"
+        }
+      }
+    }, {
+      "match" : "cassandra.*Latency\\.OneMinuteRate",
+      "properties" : {
+        "tags" : {
+          "unit" : "ms"
+        }
+      }
+    }, {
+      "match" : "cassandra.*Cache.*\\.HitRate",
+      "properties" : {
+        "tags" : {
+          "unit" : "percentunit"
+        },
+        "validMax" : 1
+      }
+    }, {
+      "match" : "cassandra.Keyspace.*Ratio$",
+      "properties" : {
+        "tags" : {
+          "unit" : "percentunit"
+        },
+        "validMax" : 1
+      }
+    }, {
+      "match" : "cassandra.Keyspace.*(HeapSize|DataSize|DiskSpace|Memory|RowSize).*",
+      "properties" : {
+        "tags" : {
+          "unit" : "bytes"
+        }
+      }
+    } ]
+  }
+}

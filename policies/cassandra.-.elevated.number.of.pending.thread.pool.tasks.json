@@ -1,0 +1,38 @@
+{
+  "policy" : {
+    "id" : null,
+    "name" : "Cassandra - Elevated Number of Pending Thread Pool Tasks",
+    "description" : "For at least the past 15 minutes, the number of pending tasks for one or more thread pools has been higher than expected.  This could indicate that the pools are falling behind on their tasks.",
+    "scope" : {
+      "elementName" : null,
+      "elementNameExclude" : null,
+      "fqnIncludes" : [ ],
+      "fqnExcludes" : [ ],
+      "elementType" : "SERVER",
+      "elementTags" : { }
+    },
+    "duration" : 900,
+    "conditions" : [ {
+      "metric" : null,
+      "wildcard" : "cassandra.ThreadPools.*.PendingTasks",
+      "metricScopeTags" : { },
+      "analytic" : "baselineDeviation",
+      "operator" : ">",
+      "level" : null,
+      "level2" : null,
+      "metricThresholdLevel" : null,
+      "metricThresholdAnalytic" : null
+    } ],
+    "eventConditions" : [ ],
+    "actions" : [ {
+      "type" : "event",
+      "category" : 2
+    } ],
+    "enabled" : true,
+    "deleted" : false,
+    "originTenantId" : null,
+    "originPolicyId" : null,
+    "creatorEmail" : null,
+    "lastUpdated" : null
+  }
+}
