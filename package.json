@@ -12,7 +12,10 @@
       "logo" : "http://assets.app.netuitive.com/pkg/logo/netuitive/banner_logo.png",
       "download" : "https://github.com/netuitive-community-packages/netuitive-packages-cassandra/archive/master.zip"
     },
-    "compatibility" : [ "INFRASTRUCTURE:Cassandra" ],
+    "compatibility" : [ 
+      "INFRASTRUCTURE:Cassandra",
+      "INFRASTRUCTURE:CassandraJolokia"
+    ],
     "tags" : [ ],
     "checksum" : null
   },
