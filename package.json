@@ -1,6 +1,6 @@
 {
   "id" : "netuitive.packages.cassandra",
-  "version" : "1.0.0",
+  "version" : "1.1.0",
   "manifest" : {
     "name" : "Netuitive Packages Cassandra",
     "description" : "A set of Netuitive analytics configurations, polices, dashboards, and reports that are used to monitor performance of Cassandra.",
