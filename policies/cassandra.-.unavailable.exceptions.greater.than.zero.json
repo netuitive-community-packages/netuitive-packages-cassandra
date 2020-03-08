@@ -20,7 +20,9 @@
     "enabled": true,
     "name": "Cassandra - Unavailable Exceptions Greater Than Zero",
     "scope": {
-      "elementType": "SERVER"
+      "elementTypes": [
+        "SERVER"
+      ]
     }
   }
 }
