@@ -19,7 +19,9 @@
     "enabled": true,
     "name": "Cassandra - Elevated Number of Pending Thread Pool Tasks",
     "scope": {
-      "elementType": "SERVER"
+      "elementTypes": [
+        "SERVER"
+      ]
     }
   }
 }

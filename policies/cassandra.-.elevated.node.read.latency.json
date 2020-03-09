@@ -19,7 +19,9 @@
     "enabled": true,
     "name": "Cassandra - Elevated Node Read Latency",
     "scope": {
-      "elementType": "SERVER"
+      "elementTypes": [
+        "SERVER"
+      ]
     }
   }
 }

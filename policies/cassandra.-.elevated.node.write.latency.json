@@ -19,7 +19,9 @@
     "enabled": true,
     "name": "Cassandra - Elevated Node Write Latency",
     "scope": {
-      "elementType": "SERVER"
+      "elementTypes": [
+        "SERVER"
+      ]
     }
   }
 }
